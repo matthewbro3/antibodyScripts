@@ -129,7 +129,7 @@ def shdCalc(chain):
             for j in range(i):
                 qi = hpTable[oneToThree[chain[i]]]
                 qj = hpTable[oneToThree[chain[j]]]
-                scd = shd+qj*qi*(i-j)**beta
+                shd = shd+qj*qi*(i-j)**beta
         f.close()
         return scd
     
